@@ -60,9 +60,9 @@ var Iterators = (function() {
     },
 
     reduce: function(numList, action){
-      var previousNum = null;
+      var previousNum = numList[0];
 
-      for (var i = 0; i < numList.length; i++) {
+      for (var i = 1; i < numList.length; i++) {
           previousNum = action(previousNum, numList[i])
       };
       return previousNum;

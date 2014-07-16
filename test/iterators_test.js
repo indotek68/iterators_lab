@@ -74,9 +74,9 @@ describe('Iterators', function(){
 
     it("should sum up all the values in the array and return one integer", function(){
       var result = Iterators.reduce(array1, function(taco, foo){
-        return (taco + foo);
+        return (taco - foo);
       })
-      expect(result).to.equal(10);
+      expect(result).to.equal(-8);
     })
   })  
 });
