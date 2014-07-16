@@ -34,8 +34,40 @@ var Iterators = (function() {
         newArray.push(result)
       };
       return newArray;
-      console.log(newArray)
+      //console.log(newArray)
+    },
+
+    filter: function(numList, action){
+      var newArray = [];
+
+      for (var i = 0; i < numList.length; i++) {
+        if(action(numList[i])){
+          newArray.push(numList[i]);
+        }  
+      };
+      return newArray;
+    },
+
+    reject: function(numList, action){
+      var newArray = [];
+
+      for (var i = 0; i < numList.length; i++) {
+        if (!action(numList[i])){
+          newArray.push(numList[i]);
+        }
+      };
+      return newArray;
+    },
+
+    reduce: function(numList, action){
+      var previousNum = null;
+
+      for (var i = 0; i < numList.length; i++) {
+          previousNum = action(previousNum, numList[i])
+      };
+      return previousNum;
     }
+
   }
 
 

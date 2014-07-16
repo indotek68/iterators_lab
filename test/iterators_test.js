@@ -47,8 +47,37 @@ describe('Iterators', function(){
     });
   })
 
-  describe("#filter", fu)
+  describe("#filter", function(){
+    var array1 = [1,2,3,4];
 
+    it("should copy true values from the original array", function(){
+      var result = Iterators.filter(array1, function(taco){
+        return taco < 3;
+      })
+      expect(result).to.deep.equal([1,2]);
+    });
+  })
 
+  describe("#reject", function(){
+    var array1 = [1,2,3,4];
+
+    it("should copy false values from the original array", function(){
+      var result = Iterators.reject(array1, function(taco){
+        return taco < 3;
+      })
+      expect(result).to.deep.equal([3,4]);
+    });
+  })
+  
+  describe("#reduce", function(){
+    var array1 = [1, 2, 3, 4];
+
+    it("should sum up all the values in the array and return one integer", function(){
+      var result = Iterators.reduce(array1, function(taco, foo){
+        return (taco + foo);
+      })
+      expect(result).to.equal(10);
+    })
+  })  
 });
 
