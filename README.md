@@ -17,13 +17,13 @@ Research the following term and summarize your findings on it two to three sente
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
 
-* `max` this is 
-* `min` - returns the lowest value of the array
-* `each`
-* `map` - it creates a new array by 
-* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) - filter only returns the item in the array which the function calls to be true.
-* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - reduces all the items in the array to one item
-* `reject`: [note](http://underscorejs.org/#reject) - it is the opposite of the filter iterator, the numbers lying outside of whatever condition you specify.
+* `max` - should return the max in an array and infinity in an empty array. If you have a range of values in an array you can find the highest number in the array using 'max.'
+* `min` - returns the lowest value of the array. If you have a range of values in an array, you can find the lowest number in the array using 'min.' 
+* `each`- each iterator goes through each item in the array. An example would be returning the values of the array using console.log.
+* `map` - it creates a new array by taking a function and passing it with the original array. An example would be: if  I created a function that returns (num + 1) and passed it to the original array of [1, 2, 3], a new array would ouput [2, 3, 4].
+* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) - filter only returns the item in the array which the function calls to be true. Example: if I generated an array of [2, 4, 10] and a function was called to return (num<10), then a new array would return [2, 4].
+* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - reduces all the items in the array to a single value. Example: If I had an array of integers and passed an arithmetic function to add all the numbers, it would create an array with a single value of the sum of all integers in a new array.
+* `reject`: [note](http://underscorejs.org/#reject) - it is the opposite of the filter iterator, the numbers lying outside of whatever condition you specify. Example: if I generated an array with a range of intergers [1,2,11,12] and I passed in a function(num<10), it would spit out the numbers that are greater than 10, [11,12]
 
 Use the notes provided to help guide you explanation.
 

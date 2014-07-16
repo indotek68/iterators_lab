@@ -22,5 +22,11 @@ describe('Iterators', function(){
       expect(Iterators.min([7, 3, 21])).to.equal(3);
     });
   });
+
+  describe("#each", function(){
+    it("should return the array", function(){
+      expection(Iterators.each([7, 3, 21])).to.equal([7, 3, 21]);
+    })
+  });
 })
 
