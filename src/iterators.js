@@ -18,8 +18,26 @@ var Iterators = (function() {
         }
       }
       return smallest;
+    },
+
+    each: function(numList, action){
+      for (var i = 0; i < numList.length; i++) {
+        action(numList[i], i)
+      };
+      return numList
+    },
+
+    map: function(numList, action){
+      var newArray = [];
+      for (var i = 0; i < numList.length; i++) {
+        var result = action(numList[i])
+        newArray.push(result)
+      };
+      return newArray;
+      console.log(newArray)
     }
-  };
+  }
+
 
   return api;
 })();

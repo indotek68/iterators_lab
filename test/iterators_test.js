@@ -24,9 +24,31 @@ describe('Iterators', function(){
   });
 
   describe("#each", function(){
-    it("should return the array", function(){
-      expection(Iterators.each([7, 3, 21])).to.equal([7, 3, 21]);
-    })
+    var x = 0;
+    var myArr = [1,2,3,4]
+    
+    it("should call a function on each item in an array and return the original array", function(){
+      Iterators.each(myArr, function(curr, index){
+        x += curr;
+      });
+      expect(x).to.equal(10);
+    });
   });
-})
+
+  describe("#map", function(){
+    var array1 = [1,2,3,4]
+
+    it("should create a new array that doubles the value of array1", function(){
+      var result = Iterators.map(array1, function(taco){
+        return taco * 2;
+      })
+      expect(result).to.deep.equal([2,4,6,8])
+      //expect(true).to.equal(false);
+    });
+  })
+
+  describe("#filter", fu)
+
+
+});
 
