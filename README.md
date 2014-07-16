@@ -11,19 +11,19 @@ In the iterators lab we will be continuing our exploration of iterators and buil
 
 Research the following term and summarize your findings on it two to three sentences:
 
-* `higher-order function`
+* `higher-order function` - is a function that takes a function as an argument.
 
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
 
-* `max`
-* `min`
+* `max` this is 
+* `min` - returns the lowest value of the array
 * `each`
-* `map`
-* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-* `reject`: [note](http://underscorejs.org/#reject)
+* `map` - it creates a new array by 
+* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) - filter only returns the item in the array which the function calls to be true.
+* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - reduces all the items in the array to one item
+* `reject`: [note](http://underscorejs.org/#reject) - it is the opposite of the filter iterator, the numbers lying outside of whatever condition you specify.
 
 Use the notes provided to help guide you explanation.
 

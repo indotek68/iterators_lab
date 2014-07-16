@@ -9,6 +9,15 @@ var Iterators = (function() {
         }
       };
       return max;
+    },
+    min: function(numList){
+      var smallest = Infinity;
+      for (var i = 0; i < numList.length; i++) {
+        if(numList[i] < smallest){
+          smallest = numList[i];
+        }
+      }
+      return smallest;
     }
   };
 
